@@ -55,7 +55,7 @@ contract('MinToken', function(accounts){
 		});
 	});
 
-	it('approves tokes for delegated transfer', function(){
+	it('approves tokens for delegated transfer', function(){
 		return MinToken.deployed().then(function(instance){
 			tokenInstance = instance;
 			return tokenInstance.approve.call(accounts[1], 100);
